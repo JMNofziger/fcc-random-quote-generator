@@ -1,9 +1,9 @@
-// make html skeleton using bootstrap 
+<!-- // make html skeleton using bootstrap 
 
 // user stories: I can click a button to show me a new random quote
 // user stories: I can press a button to tweet out a quote
 // user stories: Scrape twitter feed of any selected account to generate quotes
-
+ -->
 <html>
 
 	<head>
@@ -11,16 +11,15 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">                                                              
 
 		<!-- Link my own css sheet to this document -->
-		<link rel="stylesheet" href="styles/myportfolio-styles.css">
+		<link rel="stylesheet" href="styles.css">
 		                                                                                                                                                                
 		<link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
-
 		<!-- Latest compiled JS -->
 		<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Random Quote Generator</title>
+		<title>JMNofziger - Random Quote Generator</title>
 	</head>                                                                                   
 
 	<body>
@@ -37,16 +36,14 @@
 			            <span class="icon-bar"></span>
 			        </button>
 			        <!-- Brand -->
-			        <a class="navbar-brand" href="#">Web Development and More</a>
+			        <a class="navbar-brand" href="#">Random Quote Generator</a>
 		        </div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 		        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			        <ul class="nav navbar-nav navbar-right">
-				        <li><a href="#projects">Projects</a></li>
 				        <li role="separator" class="divider"></li>
-				        <li><a href="#experience">Experience</a></li>
-				        <li><a href="#learn-more">Learn More</a></li>
+				        <li><a href="https://jmnofziger.github.io">About Me</a></li>
 			        </ul>
 		        </div>
 	          	<!-- /.navbar-collapse -->
@@ -54,5 +51,22 @@
         	<!-- /.container-fluid -->
 	    </nav>
 	    <!-- Closes navbar section -->
+	    <div class="container-fluid">
+		    <div class="hold-it-all-in">
+		    	 <div class="container-fluid intro-prompt">
+			    	<h3>Get yourself a random quote <button id="new-quote" class="btn btn-large">New Quote</button></h3>
+			    	<p> Hit that "New Quote" button: I promise you'll get a quote from someone "notable"...</p>
+		    	</div>
+		    	<div class="container-fluid">
+		    		<em><p class="content">Placeholder</p></em>
+		    	</div>
+		    </div>
+	    </div>
 	</body>
+	<footer>
+		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="new-quote.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</footer>
 </html>
